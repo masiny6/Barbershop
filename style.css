@@ -604,10 +604,21 @@ footer {
     border: #000000;
     margin-top: 9px;
 }
-.close {
+.close::before,
+.close::after {
+    content: " ";
     position: absolute;
+    width: 17px;
+    height: 3px;
+    background-color: #cfcfcf;
     left: 510px;
-    top: 5px;
+    top: 20px;
+}
+.close::after {
+    transform: rotate(45deg);
+}
+.close::before {
+    transform: rotate(-45deg);
 }
 /***MODAL-MAP***/
 .modalDialog-map {
@@ -634,10 +645,21 @@ footer {
     margin-left: auto;
     margin-right: auto;
 }
-.close-map {
+.close-map::before,
+.close-map::after {
+    content: " ";
     position: absolute;
+    width: 17px;
+    height: 3px;
+    background-color: #cfcfcf;
     left: 790px;
-    top: 5px;
+    top: 20px;
+}
+.close-map::after {
+    transform: rotate(45deg);
+}
+.close-map::before {
+    transform: rotate(-45deg);
 }
 /*-------------------------PRICE------------------------*/
 .indicator {
