@@ -1,141 +1,156 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="normalize.css">
-        <link rel="stylesheet" href="style.css">
-        <meta charset="utf-8">
-        <title>Barbershop</title>
-    </head>
-    <body>
-        <header class="main-header">
-            <nav class="main-navigation">
-                <ul class="site-navigation">
-                    <li class="logo"><a href="index.html"><img src="content/logo.svg"></a></li>
-                    <li class="site-navigation-item"><a href="">Информация</a></li>
-                    <li class="site-navigation-item"><a href="">Новости</a></li>
-                    <li class="site-navigation-item indicator"><a>Прайc-лист</a></li>
-                    <li class="site-navigation-item"><a href="shop.html">Магазин</a></li>
-                    <li class="site-navigation-item"><a href="">Контакты</a></li>
-                </ul>
-                <ul class="header-login">
-                    <li class="header-login-item"><a href="#open-modal">Вход</a></li>
-                </ul>
-            </nav> 
-        </header>
 
-        <main class="container-internal">
-            <section class="header-internal-page">
-                <h1>Прайс-лист</h1>
-                <div class="way">
-                    <a href="index.html"><span class="way-main">Главная</span></a>
-                    <span class="rhombus-4 way-rhombus"></span>
-                    <span class="way-price">Прай-лист</span>
-                </div>
-            </section>
+<head>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title>Barbershop</title>
+</head>
 
-            <section class="means-and-prices">
-                <div class="headline">
-                    <img class="line-black-left" src="images/line-black.png">
-                    <b>ИСТИННО МУЖСКАЯ КЛАССИКА</b>
-                    <img class="line-black-right" src="images/line-black.png">
-                </div>
+<body>
+  <header class="main-header">
+    <nav class="main-navigation">
+      <ul class="site-navigation">
+        <li class="logo">
+          <a href="index.html"><img src="content/logo.svg" alt="Лого сайта"></a>
+        </li>
+        <li class="site-navigation-item"><a href="">Информация</a></li>
+        <li class="site-navigation-item"><a href="">Новости</a></li>
+        <li class="site-navigation-item indicator"><a>Прайc-лист</a></li>
+        <li class="site-navigation-item"><a href="shop.html">Магазин</a></li>
+        <li class="site-navigation-item"><a href="">Контакты</a></li>
+      </ul>
+      <ul class="header-login">
+        <li class="header-login-item"><a href="#open-modal">Вход</a></li>
+      </ul>
+    </nav>
+  </header>
 
-                <div class="means-prices">
-                    <div class="means">
-                        <h2>Мы используем только<br> лучшие средства:</h2>
-                        <ul class="means-list">
-                            <li>Baxter of California</li>
-                            <li>Mr Natty</li>
-                            <li>Suavecito</li>
-                            <li>Malin+Goetz</li>
-                        </ul>
-                    </div>
-                    <div class="prices">
-                        <h2>Цены на услуги<br> наших мастеров:</h2>
-                        <table class="prices-list">
-                            <tr>
-                                <th class="service-item">Стрижка</th>
-                                <th class="prices-item">1500 ₽</th>
-                            </tr>
-                            <tr>
-                                <th class="service-item">Стрижка бороды</th>
-                                <th class="prices-item">500 ₽</th>
-                            </tr>
-                            <tr>
-                                <th class="service-item">Накрутка усов</th>
-                                <th class="prices-item">350 ₽</th>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </section>
+  <main class="container-internal">
+    <section class="header-internal-page">
+      <h1>Прайс-лист</h1>
+      <div class="way">
+        <a href="index.html"><span class="way-main">Главная</span></a>
+        <span class="rhombus-4 way-rhombus"></span>
+        <span class="way-price">Прай-лист</span>
+      </div>
+    </section>
 
-            <section class="about-us">
-                <h3>Несколько слов о нас:</h3>
-                <div class="description">
-                    <p class="description-1">
-                        Наша парикмахерская занимается исключительно мужскими<br>
-                        стрижками. Стрижка каждого клиента для нас - это<br>
-                        уникальная и продуманная до мелочей работа. Мы не работаем<br>
-                        на количество, мы делаем качество.
-                    </p>
-                    <p class="description-2">
-                        Наша мастерская расположена в центре города, поэтому<br>
-                        сделать стильную стрижку можно в любое время, даже в<br>
-                        обеденный перерыв. Здесь вы можете погрузиться в удобную<br>
-                        для вас атмосферу, чувствовать себя комфортно и свободно!
-                    </p>
-                </div>
-            </section>
+    <section class="means-and-prices">
+      <div class="headline">
+        <img class="line-black-left" src="images/line-black.png" alt="">
+        <b>ИСТИННО МУЖСКАЯ КЛАССИКА</b>
+        <img class="line-black-right" src="images/line-black.png" alt="">
+      </div>
 
-            <div id="open-modal" class="modalDialog">
-              <div>
-                  <div class="content-modal">
-                      <a href="#close" title="Закрыть" class="close"></a>
-                      <h2>Личный кабинет</h2>
-                      <p>Введите пожалуйста свой логин и пароль</p>
-                      <label><input class="login-input" placeholder="Логин"><span class="visually-hidden">Логин</span></label><br>
-                      <label><input class="password-input" placeholder="Пароль"><span class="visually-hidden">Пароль</span></label><br>
-                      <label class="remember-input"><input type="checkbox" name="remember-password" value="American Crew">Запомните меня</label>
-                      <span class="forgot-password">Я забыл пароль!</span><br>
-                      <button class="come-in">Войти</button>
-                  </div>
-              </div>
-          </div>
+      <div class="means-prices">
+        <div class="means">
+          <h2>Мы используем только<br> лучшие средства:</h2>
+          <ul class="means-list">
+            <li>Baxter of California</li>
+            <li>Mr Natty</li>
+            <li>Suavecito</li>
+            <li>Malin+Goetz</li>
+          </ul>
+        </div>
+        <div class="prices">
+          <h2>Цены на услуги<br> наших мастеров:</h2>
+          <table class="prices-list">
+            <tr>
+              <th class="service-item">Стрижка</th>
+              <th class="prices-item">1500 ₽</th>
+            </tr>
+            <tr>
+              <th class="service-item">Стрижка бороды</th>
+              <th class="prices-item">500 ₽</th>
+            </tr>
+            <tr>
+              <th class="service-item">Накрутка усов</th>
+              <th class="prices-item">350 ₽</th>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
 
-          <div id="open-modal-map" class="modalDialog-map">
-              <div>
-                  <div class="content-modal-map">
-                      <a href="#close-map" title="Закрыть" class="close-map"></a>
-                  </div>
-              </div>
-          </div>
-        </main>
+    <section class="about-us">
+      <h3>Несколько слов о нас:</h3>
+      <div class="description">
+        <p class="description-1">
+          Наша парикмахерская занимается исключительно мужскими<br> 
+          стрижками. Стрижка каждого клиента для нас - это<br> 
+          уникальная и продуманная до мелочей работа. Мы не работаем<br> 
+          на количество, мы делаем качество.
+        </p>
+        <p class="description-2">
+          Наша мастерская расположена в центре города, поэтому<br> 
+          сделать стильную стрижку можно в любое время, даже в<br> 
+          обеденный перерыв. Здесь вы можете погрузиться в удобную<br> 
+          для вас атмосферу, чувствовать себя комфортно и свободно!
+        </p>
+      </div>
+    </section>
 
-        <footer>
-            <div class="footer-sections"> 
-                <section class="footer-adress">
-                    <p>Барбершоп «Бородинский»<br>
-                       Адрес:<adress> г. Санкт-петербург, б. Конюшенная, д. 19/8</adress><br>
-                       <a class="how-to-find-us" href="#open-modal-map">Как нас найти?</a><br>
-                       Телефон:<a class="footer-tel" href="tel:+7(495)666-02-66"> +7(495)666-02-66</a>
-                    </p>
-                </section>
+    <div id="open-modal" class="modalDialog">
+      <div>
+        <div class="content-modal">
+          <a href="#close" title="Закрыть" class="close"></a>
+          <h2>Личный кабинет</h2>
+          <p>Введите пожалуйста свой логин и пароль</p>
+          <label>
+            <input class="login-input" placeholder="Логин"><span class="visually-hidden">Логин</span></label>
+          <br>
+          <label>
+            <input class="password-input" placeholder="Пароль"><span class="visually-hidden">Пароль</span></label>
+          <br>
+          <label class="remember-input">
+            <input type="checkbox" name="remember-password" value="American Crew">Запомните меня</label>
+          <span class="forgot-password">Я забыл пароль!</span>
+          <br>
+          <button class="come-in">Войти</button>
+        </div>
+      </div>
+    </div>
 
-                <section class="social-networks">
-                    <p>Давайте дружить!</p>
-                    <ul class="social-network-item">
-                        <li class="social-vkontakte"><a href="https://vk.com/"><i></i></a></li>
-                        <li class="social-facebook"><a href="https://www.facebook.com/"><i></i></a></li>
-                        <li class="social-instagram"><a href="https://www.instagram.com/"><i></i></a></li>
-                    </ul>
-                </section>
+    <div id="open-modal-map" class="modalDialog-map">
+      <div>
+        <div class="content-modal-map">
+          <a href="#close-map" title="Закрыть" class="close-map"></a>
+        </div>
+      </div>
+    </div>
+  </main>
 
-                <section class="developer">
-                    <p>Разработано:</p>
-                    <p class="web-code-button"><a href="https://www.instagram.com/___web.coder___/">web.coder</a><p>
-                </section>
-            </div>
-        </footer>
-    </body>
+  <footer>
+    <div class="footer-sections">
+      <section class="footer-adress">
+        <p>Барбершоп «Бородинский»
+          <br> Адрес:
+          <adress> г. Санкт-петербург, б. Конюшенная, д. 19/8</adress>
+          <br>
+          <a class="how-to-find-us" href="#open-modal-map">Как нас найти?</a>
+          <br> Телефон:
+          <a class="footer-tel" href="tel:+7(495)666-02-66"> +7(495)666-02-66</a>
+        </p>
+      </section>
+
+      <section class="social-networks">
+        <p>Давайте дружить!</p>
+        <ul class="social-network-item">
+          <li class="social-vkontakte"><a href="https://vk.com/"><i></i></a></li>
+          <li class="social-facebook"><a href="https://www.facebook.com/"><i></i></a></li>
+          <li class="social-instagram"><a href="https://www.instagram.com/"><i></i></a></li>
+        </ul>
+      </section>
+
+      <section class="developer">
+        <p>Разработано:</p>
+        <p class="web-code-button"><a href="https://www.instagram.com/___web.coder___/">web.coder</a>
+          <p>
+      </section>
+    </div>
+  </footer>
+</body>
+
 </html>

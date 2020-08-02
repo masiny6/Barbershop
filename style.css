@@ -8,14 +8,12 @@
 body {
     margin: 0;
     padding: 0;
-
     font-family: "PtSansNarrowBold", "Arial", sans-serif;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 24px;
     color: #ffffff;
-
     background-color: #000000;
     background-image: url(content/background-cite.jpg);
     background-repeat: no-repeat;
@@ -41,6 +39,8 @@ header {
     background-color: #000000;
 }
 .main-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 940px;
     margin-left: auto;
@@ -51,8 +51,11 @@ header {
 .site-navigation {
     margin: 0;
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: auto;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     list-style: none;
 }
@@ -114,19 +117,22 @@ header {
     margin-top: 60px;
 }
 .main-logo img {
-    width: 375;
-    height: 155;
+    width: 375px;
+    height: 155px;
 }
 /*************************ADVANTAGES*************************/
 .advantages {
     margin-top: 64px;
 }
 .advantages-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     text-align: center;
     width: 940px;
     margin-right: auto;
     margin-left: auto;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     padding-right: 20px;
     position: relative;
@@ -143,6 +149,8 @@ header {
     width: 15px;
     height: 15px;
     background-color: #ffffff;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     bottom: 100px;
     left: 180px;
@@ -153,6 +161,8 @@ header {
     width: 15px;
     height: 15px;
     background-color: #ffffff;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     bottom: 100px;
     right: 176px;
@@ -163,19 +173,24 @@ header {
     width: 15px;
     height: 15px;
     background-color: #ffffff;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     bottom: 100px;
     left: 485px;
 }
 /*************************NEWS AND PHOTO*************************/
 .news-and-photo {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     margin-top: 65px;
     margin-left: auto;
     margin-right: auto;
     color: #000000;
-
     background-image: url(content/background-news.png);
     background-repeat: repeat;
     background-position: center;
@@ -219,7 +234,11 @@ header {
     padding-left: 90px;
 }
 .photo p {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     margin-top: 38px;
 }
@@ -243,13 +262,16 @@ header {
 }
 /*************************CONTACT AND RESERVATION*************************/
 .contact-reservation {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     color: #000000;
     margin-top: 65px;
     margin-left: auto;
     margin-right: auto;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
-
     background-image: url(content/background-contact.png);
     background-repeat: repeat;
     background-position: center;
@@ -300,7 +322,10 @@ header {
     line-height: 42px;
 }
 .form-record {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 .form-record fieldset {
@@ -343,7 +368,6 @@ header {
 .form-record button {
     margin: 0;
     padding: 0;
-
     border: 0;
     text-transform: uppercase;
     background-color: #000000;
@@ -355,7 +379,6 @@ header {
 .form-record button:hover {
     margin: 0;
     padding: 0;
-
     border: 0;
     text-transform: uppercase;
     background-color: #653d15;
@@ -366,13 +389,14 @@ header {
 /*************************FOOTER*************************/
 footer {
     border: 1px #242424 solid;
-    
     background-image: url(content/backgroun-footer.png);
     background-repeat: repeat;
     width: 100%;
     min-height: 193px;
 }
 .footer-sections {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 940px;
     margin-left: auto;
@@ -383,8 +407,13 @@ footer {
 .social-network-item {
     padding: 0;
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     list-style: none;
 }
@@ -485,6 +514,7 @@ footer {
     color: black;
     background: #fff;
     background-image: url(content/background-modal.png);
+    -webkit-box-shadow: 0 30px 50px rgba(0,0,0,0.7);
     box-shadow: 0 30px 50px rgba(0,0,0,0.7);
 }
 .content-modal {
@@ -616,9 +646,13 @@ footer {
     top: 20px;
 }
 .close::after {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 .close::before {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
 /***MODAL-MAP***/
@@ -657,9 +691,13 @@ footer {
     top: 20px;
 }
 .close-map::after {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 .close-map::before {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
     transform: rotate(-45deg);
 }
 /*-------------------------PRICE------------------------*/
@@ -701,6 +739,8 @@ footer {
     width: 9px;
     height: 9px;
     background-color: #000000;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     right: 15px;
     top: 5px;
@@ -758,6 +798,8 @@ footer {
     width: 227px;
 }
 .means-prices {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .means {
@@ -785,6 +827,8 @@ footer {
     line-height: 30px;
 }
 .description {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .description-1 {
@@ -942,14 +986,20 @@ footer {
 
 /***CATALOG***/
 .filter-and-catalog {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 .catalog {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 .catalog-item {
     background-color: #ffffff;
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.2);
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     margin-left: 19px;
     margin-bottom: 20px;
@@ -985,7 +1035,11 @@ footer {
 }
 
 .pages {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     width: 193px;
     margin-left: 239px;
@@ -1017,12 +1071,15 @@ footer {
 }
 /*-------------------------SHOP-ITEM------------------------*/
 .photo-catalog-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-left: auto;
     margin-right: auto;
     width: 940px;
 }
 .catalog-item-internal img {
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.2);
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 .product-description {
