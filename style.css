@@ -1114,6 +1114,10 @@ input[name="manufacturers-5"] {
     margin-right: auto;
     width: 940px;
 }
+.catalog-item-internal {
+    border: 1px solid red;
+    width: 100%;
+}
 .catalog-item-internal img {
     -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.2);
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
