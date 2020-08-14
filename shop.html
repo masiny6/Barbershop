@@ -5,16 +5,19 @@
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Barbershop</title>
 </head>
 
 <body>
   <header class="main-header">
     <nav class="main-navigation">
-      <ul class="site-navigation">
+      <a class="popup" href="#popup-menu"></a>
+      <ul id="popup-menu" class="site-navigation site-navigation-370px">
         <li class="logo">
           <a href="index.html"><img src="content/logo.svg" alt="Лого сайта"></a>
         </li>
+        <li class="site-navigation-item indicator-none"><a href="index.html">Главная</a></li>
         <li class="site-navigation-item"><a href="">Информация</a></li>
         <li class="site-navigation-item"><a href="">Новости</a></li>
         <li class="site-navigation-item"><a href="price-list.html">Прайc-лист</a></li>
@@ -40,38 +43,45 @@
     </section>
 
     <section class="filter-and-catalog">
-      <form class="product-filter-form" method="POST" action="#">
+      <a class="filter-form" href="#filter">Фильтр</a>
+      <form id="filter" class="product-filter-form product-filter-form-370px" method="POST" action="#">
         <fieldset class="manufacturers-filter">
           <legend>Производители:</legend>
           <ul class="manafacturers-filter-list">
             <li>
               <label>
-                <input type="checkbox" name="manufacturers-1" value="Baxter of California">Baxter of California<br>
+                <input type="checkbox" name="manufacturers-1" value="Baxter of California">Baxter of California
+                <br>
               </label>
             </li>
             <li>
               <label>
-                <input type="checkbox" name="manufacturers-2" value="Mr Natty">Mr Natty<br>
+                <input type="checkbox" name="manufacturers-2" value="Mr Natty" disabled>Mr Natty
+                <br>
               </label>
             </li>
             <li>
               <label>
-                <input type="checkbox" name="manufacturers-3" value="Suavecito">Suavecito<br>
+                <input type="checkbox" name="manufacturers-3" value="Suavecito">Suavecito
+                <br>
               </label>
             </li>
             <li>
               <label>
-                <input type="checkbox" name="manufacturers-4" value="Malin+Goetz">Malin+Goetz<br>
+                <input type="checkbox" name="manufacturers-4" value="Malin+Goetz" disabled>Malin+Goetz
+                <br>
               </label>
             </li>
             <li>
               <label>
-                <input type="checkbox" name="manufacturers-5" value="Murray’s">Murray’s<br>
+                <input type="checkbox" name="manufacturers-5" value="Murray’s" disabled>Murray’s
+                <br>
               </label>
             </li>
             <li>
               <label>
-                <input type="checkbox" name="manufacturers-6" value="American Crew">American Crew<br>
+                <input type="checkbox" name="manufacturers-6" value="American Crew">American Crew
+                <br>
               </label>
             </li>
           </ul>
@@ -81,17 +91,20 @@
           <ul class="product-filter-list">
             <li>
               <label>
-                <input type="radio" name="product-filter" value="Бритвенные принадлежности">Бритвенные <span>принадлежности</span><br>
+                <input class="razor" type="radio" name="product-filter" value="Бритвенные принадлежности">Бритвенные <span>принадлежности</span>
+                <br>
               </label>
             </li>
             <li>
               <label>
-                <input type="radio" name="product-filter" value="Средства для ухода">Средства для ухода<br>
+                <input class="care" type="radio" name="product-filter" value="Средства для ухода">Средства для ухода
+                <br>
               </label>
             </li>
             <li>
               <label>
-                <input type="radio" name="product-filter" value="Аксессуары">Аксессуары<br>
+                <input class="accessories" type="radio" name="product-filter" value="Аксессуары">Аксессуары
+                <br>
               </label>
             </li>
           </ul>
@@ -99,55 +112,61 @@
         <button>Показать</button>
       </form>
       <div class="catalog">
-        <div class="catalog-item">
+        <div class="catalog-item baxter-js accessories-js">
           <a href="item.html"><img src="content/catalog-item-1.png" alt="Фото товара"></a>
           <a href="item.html" class="product-name">
-            <p>Набор для путешествий<br>
+            <p>Набор для путешествий
+              <br>
               <span>«Baxter of California»</span>
             </p>
           </a>
           <span class="value">2900 ₽</span><a href="#" class="buy">Купить</a>
         </div>
-        <div class="catalog-item">
+        <div class="catalog-item baxter-js care-js">
           <a href="#"><img src="content/catalog-item-2.png" alt="Фото товара"></a>
           <a class="product-name" href="#">
-            <p>Увлажняющий кондиционер<br>
+            <p>Увлажняющий кондиционер
+              <br>
               <span>«Baxter of California»</span>
             </p>
           </a>
           <span class="value">750 ₽</span><a href="#" class="buy">Купить</a>
         </div>
-        <div class="catalog-item">
+        <div class="catalog-item suavecito-js care-js">
           <a href="#"><img src="content/catalog-item-3.png" alt="Фото товара"></a>
           <a class="product-name" href="#">
-            <p>Гель для волос<br>
+            <p>Гель для волос
+              <br>
               <span>«SUAVECITO»</span>
             </p>
           </a>
           <span class="value">290 ₽</span><a href="#" class="buy">Купить</a>
         </div>
-        <div class="catalog-item">
+        <div class="catalog-item american-js care-js">
           <a href="#"><img src="content/catalog-item-4.png" alt="Фото товара"></a>
           <a class="product-name" href="#">
-            <p>Глина для укладки волос<br>
+            <p>Глина для укладки волос
+              <br>
               <span>«American crew»</span>
             </p>
           </a>
           <span class="value">500 ₽</span><a href="#" class="buy">Купить</a>
         </div>
-        <div class="catalog-item">
+        <div class="catalog-item american-js care-js">
           <a href="#"><img src="content/catalog-item-5.png" alt="Фото товара"></a>
           <a class="product-name" href="#">
-            <p>Гель для волос<br>
+            <p>Гель для волос
+              <br>
               <span>«AMERICAN CREW»</span>
             </p>
           </a>
           <span class="value">300 ₽</span><a href="#" class="buy">Купить</a>
         </div>
-        <div class="catalog-item">
+        <div class="catalog-item baxter-js razor-js">
           <a href="#"><img src="content/catalog-item-6.png" alt="Фото товара"></a>
           <a class="product-name" href="#">
-            <p>Набор для бритья<br>
+            <p>Набор для бритья
+              <br>
               <span>«Baxter of California»</span>
             </p>
           </a>
@@ -170,17 +189,20 @@
           <a href="#close" title="Закрыть" class="close"></a>
           <h2>Личный кабинет</h2>
           <p>Введите пожалуйста свой логин и пароль</p>
-          <label>
-            <input class="login-input" placeholder="Логин"><span class="visually-hidden">Логин</span></label>
-          <br>
-          <label>
-            <input class="password-input" placeholder="Пароль"><span class="visually-hidden">Пароль</span></label>
-          <br>
-          <label class="remember-input">
-            <input type="checkbox" name="remember-password" value="American Crew">Запомните меня</label>
-          <span class="forgot-password">Я забыл пароль!</span>
-          <br>
-          <button class="come-in">Войти</button>
+          <form method="POST" action="#">
+            <label>
+              <input class="login-input" placeholder="Логин" maxlength="40"><span class="visually-hidden">Логин</span></label>
+            <br>
+            <span class="error-js"></span>
+            <label>
+              <input class="password-input" type="password" placeholder="Пароль" maxlength="24"><span class="visually-hidden">Пароль</span></label>
+            <br>
+            <label class="remember-input">
+              <input class="show-password" type="checkbox" name="remember-password">Показать пароль</label>
+            <span class="forgot-password">Я забыл пароль!</span>
+            <br>
+            <button type="submit" class="come-in">Войти</button>
+          </form>
         </div>
       </div>
     </div>
@@ -223,6 +245,9 @@
       </section>
     </div>
   </footer>
+  <script src="menu-popup.js"></script>
+  <script src="validation-login.js"></script>
+  <script src="script-catalog.js"></script>
 </body>
 
 </html>

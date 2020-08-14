@@ -5,13 +5,15 @@
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Barbershop</title>
 </head>
 
 <body>
   <header class="main-header">
     <nav class="main-navigation">
-      <ul class="site-navigation">
+      <a class="popup" href="#popup-menu"></a>
+      <ul id="popup-menu" class="site-navigation site-navigation-370px">
         <li class="site-navigation-item"><a href="">Информация</a></li>
         <li class="site-navigation-item"><a href="">Новости</a></li>
         <li class="site-navigation-item"><a href="price-list.html">Прайc-лист</a></li>
@@ -26,31 +28,25 @@
 
   <main class="container">
     <div class="main-logo">
-      <img src="content/main-logo.svg" alt="logo сайта" width="375">
+      <img src="content/main-logo.svg" alt="logo сайта">
     </div>
 
     <section class="advantages">
       <ul class="advantages-list">
         <li class="advantages-item">
           <h2>Быстро</h2>
-          <span class="rhombus-1"></span>
-          <p>Мы делаем свою работу быстро! Два часа
-            <br> пролетят незаметно и вы - счастливый
-            <br> обладатель стильной стрижки-минутки!</p>
+          <span class="rhombus-1 rhombus-370px-1"></span>
+          <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки!</p>
         </li>
         <li class="advantages-item">
           <h2>Круто</h2>
-          <span class="rhombus-2"></span>
-          <p>Забудьте, как вы стриглись раньше.
-            <br> Мы сделаем из вас звезду футбола или кино!
-            <br> Во всяком случае внешне.</p>
+          <span class="rhombus-2 rhombus-370px-2"></span>
+          <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
         </li>
         <li class="advantages-item">
           <h2>Дорого</h2>
-          <span class="rhombus-3"></span>
-          <p>Наши мастера — профессионалы своего дела и
-            <br> не могут стоить дешево. К тому же, разве цена
-            <br> не дает определеный статус?</p>
+          <span class="rhombus-3 rhombus-370px-3"></span>
+          <p>Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определеный статус?</p>
         </li>
       </ul>
     </section>
@@ -58,21 +54,18 @@
     <section class="news-and-photo">
       <div class="news">
         <h2>Новости</h2>
-        <p>Нам наконец завезли ягермайстер! Теперь вы можете
-          <br> пропустить стаканчик во время стрижки</p>
+        <p>Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
         <time datetime="2020-01-11">11 января</time>
-        <p>В нашей команде пополнение, борис «бритва» стригунец,
-          <br> обладaтель множества титулов и наград пополнил наши
-          <br> стройные ряды</p>
+        <p>В нашей команде пополнение, борис «бритва» стригунец, обладaтель множества титулов и наград пополнил наши стройные ряды</p>
         <time datetime="2020-01-18">18 января</time>
         <p class="all-news"><a href="">Все новости</a></p>
       </div>
 
-      <img src="images/line.png" alt="">
+      <img class="demarcation-line" src="images/line.png" alt="">
 
       <div class="photo">
         <h2>Фотогаллерея</h2>
-        <a href=""><img src="content/photo-gallery.png" alt="фотография барбершопа внутри"></a>
+        <a class="photo-gallery" href="#"><img src="content/photo-gallery.jpg" alt="фотография барбершопа внутри"></a>
         <p>
           <button class="back">Назад</button>
           <button class="next">Вперёд</button>
@@ -93,36 +86,37 @@
         <p class="working-hourse">Время работы:
           <br> пн—пт: с 10:00 до 22:00
           <br> сб—вс: с 10:00 до 19:00</p>
-
-        <a href="#open-modal-map" class="contact-button">Как проехать</a>
-        <a href="" class="contact-button feedback-button">Обратная связь</a>
+        <p class="adress-button">
+          <a href="#open-modal-map" class="contact-button">Как проехать</a>
+          <a href="" class="contact-button feedback-button">Обратная связь</a>
+        </p>
       </div>
 
-      <img src="images/line.png" alt="">
+      <img class="demarcation-line" src="images/line.png" alt="">
 
       <div class="reservation">
         <h2>Записаться</h2>
-        <p>Укажите желаемую дату и время и мы свяжемся
+        <p class="reservation-info">Укажите желаемую дату и время и мы свяжемся
           <br> с вами для подтверждения брони</p>
         <form class="form-record" method="POST" action="#">
           <fieldset class="data-input">
             <legend>дата</legend>
-            <input placeholder="08.10.2017">
+            <input class="form-data-input" placeholder="08.10.2017">
           </fieldset>
           <fieldset class="time-input">
             <legend>время</legend>
-            <input class="time-input" placeholder="10:00">
+            <input class="time-input form-time-input" type="number" placeholder="10:00">
           </fieldset>
           <fieldset class="name-input">
             <legend>ваше имя</legend>
-            <input placeholder="Борода">
+            <input class="form-name-input" placeholder="Борода">
           </fieldset>
           <fieldset class="phone-input">
             <legend>телефон</legend>
-            <input class="phone-input" placeholder="+7 123 456-78-90">
+            <input class="phone-input form-phone-input" type="tel" placeholder="+7 123 456-78-90">
           </fieldset>
           <br>
-          <button>Отправить</button>
+          <button class="form-record-button" type="submit">Отправить</button>
         </form>
       </div>
     </section>
@@ -133,17 +127,20 @@
           <a href="#close" title="Закрыть" class="close"></a>
           <h2>Личный кабинет</h2>
           <p>Введите пожалуйста свой логин и пароль</p>
-          <label>
-            <input class="login-input" placeholder="Логин"><span class="visually-hidden">Логин</span></label>
-          <br>
-          <label>
-            <input class="password-input" placeholder="Пароль"><span class="visually-hidden">Пароль</span></label>
-          <br>
-          <label class="remember-input">
-            <input type="checkbox" name="remember-password" value="American Crew">Запомните меня</label>
-          <span class="forgot-password">Я забыл пароль!</span>
-          <br>
-          <button class="come-in">Войти</button>
+          <form method="POST" action="#">
+            <label>
+              <input class="login-input" placeholder="Логин" maxlength="40"><span class="visually-hidden">Логин</span></label>
+            <br>
+            <span class="error-js"></span>
+            <label>
+              <input class="password-input" type="password" placeholder="Пароль" maxlength="24"><span class="visually-hidden">Пароль</span></label>
+            <br>
+            <label class="remember-input">
+              <input class="show-password" type="checkbox" name="remember-password">Показать пароль</label>
+            <span class="forgot-password">Я забыл пароль!</span>
+            <br>
+            <button type="submit" class="come-in">Войти</button>
+          </form>
         </div>
       </div>
     </div>
@@ -181,11 +178,13 @@
 
       <section class="developer">
         <p>Разработано:</p>
-        <p class="web-code-button"><a href="https://www.instagram.com/___web.coder___/">web.coder</a>
-          <p>
+        <p class="web-code-button"><a href="https://www.instagram.com/___web.coder___/">web.coder</a></p>
       </section>
     </div>
   </footer>
+  <script src="menu-popup.js"></script>
+  <script src="validation-login.js"></script>
+  <script src="validation-form.js"></script>
 </body>
 
 </html>

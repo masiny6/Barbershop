@@ -5,16 +5,19 @@
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="style.css">
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Barbershop</title>
 </head>
 
 <body>
   <header class="main-header">
     <nav class="main-navigation">
-      <ul class="site-navigation">
+      <a class="popup" href="#popup-menu"></a>
+      <ul id="popup-menu" class="site-navigation site-navigation-370px">
         <li class="logo">
           <a href="index.html"><img src="content/logo.svg" alt="Лого сайта"></a>
         </li>
+        <li class="site-navigation-item indicator-none"><a href="index.html">Главная</a></li>
         <li class="site-navigation-item"><a href="">Информация</a></li>
         <li class="site-navigation-item"><a href="">Новости</a></li>
         <li class="site-navigation-item indicator"><a>Прайc-лист</a></li>
@@ -78,16 +81,10 @@
       <h3>Несколько слов о нас:</h3>
       <div class="description">
         <p class="description-1">
-          Наша парикмахерская занимается исключительно мужскими<br> 
-          стрижками. Стрижка каждого клиента для нас - это<br> 
-          уникальная и продуманная до мелочей работа. Мы не работаем<br> 
-          на количество, мы делаем качество.
+          Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.
         </p>
         <p class="description-2">
-          Наша мастерская расположена в центре города, поэтому<br> 
-          сделать стильную стрижку можно в любое время, даже в<br> 
-          обеденный перерыв. Здесь вы можете погрузиться в удобную<br> 
-          для вас атмосферу, чувствовать себя комфортно и свободно!
+          Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!
         </p>
       </div>
     </section>
@@ -98,17 +95,20 @@
           <a href="#close" title="Закрыть" class="close"></a>
           <h2>Личный кабинет</h2>
           <p>Введите пожалуйста свой логин и пароль</p>
-          <label>
-            <input class="login-input" placeholder="Логин"><span class="visually-hidden">Логин</span></label>
-          <br>
-          <label>
-            <input class="password-input" placeholder="Пароль"><span class="visually-hidden">Пароль</span></label>
-          <br>
-          <label class="remember-input">
-            <input type="checkbox" name="remember-password" value="American Crew">Запомните меня</label>
-          <span class="forgot-password">Я забыл пароль!</span>
-          <br>
-          <button class="come-in">Войти</button>
+          <form method="POST" action="#">
+            <label>
+              <input class="login-input" placeholder="Логин" maxlength="40"><span class="visually-hidden">Логин</span></label>
+            <br>
+            <span class="error-js"></span>
+            <label>
+              <input class="password-input" type="password" placeholder="Пароль" maxlength="24"><span class="visually-hidden">Пароль</span></label>
+            <br>
+            <label class="remember-input">
+              <input class="show-password" type="checkbox" name="remember-password">Показать пароль</label>
+            <span class="forgot-password">Я забыл пароль!</span>
+            <br>
+            <button type="submit" class="come-in">Войти</button>
+          </form>
         </div>
       </div>
     </div>
@@ -151,6 +151,8 @@
       </section>
     </div>
   </footer>
+  <script src="menu-popup.js"></script>
+  <script src="validation-login.js"></script>
 </body>
 
 </html>
